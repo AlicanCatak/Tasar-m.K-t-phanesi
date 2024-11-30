@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+	background: linear-gradient(-45deg, #1F4529, #935936, #1F4529, #935936);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* ANASAYFA */
+/* HTML: <div class="loader"></div> */
+.loader1 {
+  margin-top: 32px;
+  margin-left: 32px;
+  width: calc(6*30px);
+  height: 50px;
+  display: flex;
+  color: #8d7958;
+  filter: drop-shadow(30px 25px 0 currentColor) drop-shadow(60px 0 0 currentColor) drop-shadow(120px 0 0 currentColor);
+  clip-path: inset(0 100% 0 0);
+  animation: l11 2s infinite steps(7);
+}
+.loader1:before {
+  content: "";
+  width: 30px;
+  height: 25px;
+  background: currentColor;
+  clip-path: polygon(0 50%,30% 40%,100% 0,60% 40%,100% 50%,60% 60%,100% 100%,30% 60%);
+}
+@keyframes l11 {
+  100% {clip-path: inset(0 -30px 0 0)}
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin-top: 37px;
+  width: 9px;
+  height: 864px;
+  background: #935936;
+  position: relative;
+  animation: l15 .5s infinite linear alternate;
+  
+}
+.loader:before {
+  margin-top: 35px;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -22px;
+  width: 25px;
+  height: 60px;
+  background: 
+    radial-gradient(farthest-side,#fff 92%,#0000) 60% 6px/4px 4px,
+    radial-gradient(50% 60%,#53707b 92%,#0000) center/70% 55%,
+    radial-gradient(farthest-side,#53707b 92%,#0000) 50% 3px/14px 14px,
+    radial-gradient(142% 100% at bottom right,#0000 64%,#53707b 65%) bottom/57% 40%,
+    conic-gradient(from -120deg at right,#53707b 36deg,#0000 0)100% 3px/51% 12px,
+    conic-gradient(from 120deg at top left,#0000 ,#ef524a 2deg 40deg,#0000 43deg) top/100% 10px;
+  background-repeat: no-repeat;    
+  transform: rotate(-26deg);
+  transform-origin: 100% 80%;
+  animation: l16 .25s infinite linear alternate;
+}
+.loader:after {    
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  left: -6px;
+  bottom: 15px;
+  border-radius: 100px 0 0 100px;
+  background: #53707b;
+}
+@keyframes l16 {
+  100% {transform: rotate(0)}
+}
+
+
+/* Arka plan resmi */
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Mevcut yüksekliği koruyalım */
+  z-index: -1; /* Resmi arka plana gönder */
+  object-fit: cover; /* Görselin düzgün şekilde yerleşmesini sağla */
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px 20px;
+ 
+  z-index: 1; /* Resmin üstünde */
+}
+
+/* Nav bağlantıları */
+.nav-links  {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Sağ tarafa hizala */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #E8ECD7; /* Açık yeşil yazı rengi */
+  text-decoration: none;
+  font-size: 20px; /* Yazıları büyüt */
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+  border-bottom: #935936 9px solid; /* Açık ten rengi alt çizgi */
+  font-family: "Exo", sans-serif;
+}
+
+.nav-links a:hover {
+  color: #EED3B1; /* Hover için açık ten rengi */
+}
+
+/* Orta kısım */
+.hero  {
+  height: 100vh; /* Tam ekran yüksekliği */
+  text-align: center;
+  color: #EED3B1; /* Koyu yeşil yazı rengi */
+  padding: 250px 100px 0px 100px;
+  
+}
+
+.hero-title {
+font-size: 80px;
+font-weight: bold;
+padding: 30px 100px 30px 100px; 
+font-family: "Exo", sans-serif;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.hero-description {
+  font-size: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+
+}
+
+.content {
+  flex-grow: 1; /* Footer'dan önceki alanı doldur */
+}
+
+/* Alt Kısım */
+.body-section {
+  max-width: 2500px;
+  background-color: #EED3B1; /* Alt kısım arka planı: açık ten rengi */
+  color: #1F4529; /* Alt kısım yazı rengi: koyu yeşil */
+  padding: 50px 100px 50px 100px;
+}
+
+.categories-title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #47663B; /* Yeşil yazı rengi */
+  text-align: center;
+  letter-spacing: 40px; /* Harfler arasında boşluk */
+  margin-bottom: 80px; /* Alt boşluk */
+  font-family: "Exo", sans-serif;
+}
+
+/* Kategoriler Listesi */
+.categories-list {
+  display: flex;
+  justify-content: center; /* Ortala */
+  flex-wrap: wrap; /* Taşarsa alt satıra geçir */
+  gap: 20px; /* Elemanlar arası boşluk */
+  font-family: "Exo", sans-serif;
+  
+  
+}
+
+.categories-list h1 {
+  
+  font-size: 17px; /* Yazı boyutunu optimize et */
+  font-weight: bold;
+  color: #E8ECD7; /* Açık yeşil yazı rengi */
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Ortala */
+  align-items: center;
+  background-color: #1F4529; /* Kutu arka planı koyu yeşil */
+  text-align: center;
+  width: 300px; /* Sabit genişlik */
+  height: 100px; /* Yükseklik içeriğe bağlı olarak artsın */
+  word-wrap: break-word; /* Taşan kelimeleri kır */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Geçiş efekti */
+  overflow: hidden; /* Taşan metni gizle */
+}
+
+
+
+/* Link Listesi */
+.links {
+  margin: 0;
+  padding: 0;
+
+}
+
+.links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.links a {
+  text-decoration: none;
+  font-size: 18px;
+  
+  color: #E8ECD7; /* Açık yeşil yazı */
+  padding: 12px 25px;
+  background-color: #47663B; /* Buton arka planı: yeşil */
+  
+  display: flex;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  transition: all 0.3s ease; /* Geçiş animasyonu */
+  padding: 10px 20px;
+  border-bottom: #EED3B1 2px solid;
+  
+}
+
+.links a:hover {
+  background-color: #1F4529; /* Hover arka planı: koyu yeşil */
+  transform: translateY(-3px); /* Hafif yukarı kaldır */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Daha belirgin gölge */
+}
+
+
+
