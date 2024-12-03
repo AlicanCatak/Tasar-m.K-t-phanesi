@@ -15,14 +15,50 @@ html, body {
 }
 
 body {
-	background: linear-gradient(-45deg, #1F4529, #935936, #1F4529, #935936);
+	background: linear-gradient(-45deg, #1F4529, #EED3B1, #1F4529, #EED3B1);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 	height: 100vh;
 }
 
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.hero-title {
+  -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 
+
+
+
+/* ASD */
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -162,9 +198,9 @@ body {
 }
 
 .hero-title {
-font-size: 80px;
+font-size: 130px;
 font-weight: bold;
-padding: 30px 100px 30px 100px; 
+padding: 0px 100px 30px 100px; 
 font-family: "Exo", sans-serif;
 text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
@@ -188,8 +224,8 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   max-width: 2500px;
   background-color: #EED3B1; /* Alt kısım arka planı: açık ten rengi */
   color: #1F4529; /* Alt kısım yazı rengi: koyu yeşil */
-  padding: 50px 100px 50px 100px;
-}
+
+  text-align: center;}
 
 .categories-title {
   font-size: 80px;
@@ -214,7 +250,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
 .categories-list h1 {
   
-  font-size: 17px; /* Yazı boyutunu optimize et */
+  font-size: 30px; /* Yazı boyutunu optimize et */
   font-weight: bold;
   color: #E8ECD7; /* Açık yeşil yazı rengi */
   margin: 0;
@@ -223,8 +259,8 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   align-items: center;
   background-color: #1F4529; /* Kutu arka planı koyu yeşil */
   text-align: center;
-  width: 300px; /* Sabit genişlik */
-  height: 100px; /* Yükseklik içeriğe bağlı olarak artsın */
+  width: 500px; /* Sabit genişlik */
+  height: 150px; /* Yükseklik içeriğe bağlı olarak artsın */
   word-wrap: break-word; /* Taşan kelimeleri kır */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
   transition: transform 0.3s ease, background-color 0.3s ease; /* Geçiş efekti */
@@ -269,6 +305,4 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   transform: translateY(-3px); /* Hafif yukarı kaldır */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Daha belirgin gölge */
 }
-
-
 
