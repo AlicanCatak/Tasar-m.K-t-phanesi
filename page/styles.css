@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+
   list-style: none;
 }
 
@@ -228,6 +228,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   text-align: center;}
 
 .categories-title {
+  padding: 30px;
   font-size: 80px;
   font-weight: bold;
   color: #47663B; /* Yeşil yazı rengi */
@@ -304,5 +305,35 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   background-color: #1F4529; /* Hover arka planı: koyu yeşil */
   transform: translateY(-3px); /* Hafif yukarı kaldır */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Daha belirgin gölge */
+}
+
+#container {
+  height: 600px;
+  margin: 0 auto;
+  padding: 0px 100px 0px 100px;
+  background-color: black
+  
+}
+
+.write{
+ padding-top: 50px;
+  color: #1F4529;
+  font-size: 30px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.write2{
+  padding-top: 50px;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+}
+.hero-description1 {
+  font-size: 30px;
+  font-family: "Nunito Sans", sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #E8ECD7;
 }
 
