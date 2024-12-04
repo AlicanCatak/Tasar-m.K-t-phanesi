@@ -245,6 +245,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   flex-wrap: wrap; /* Taşarsa alt satıra geçir */
   gap: 20px; /* Elemanlar arası boşluk */
   font-family: "Exo", sans-serif;
+ padding-bottom: 50px;
   
   
 }
@@ -308,6 +309,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #container {
+
   height: 600px;
   margin: 0 auto;
   padding: 0px 100px 0px 100px;
