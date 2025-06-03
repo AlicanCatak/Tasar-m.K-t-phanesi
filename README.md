@@ -2,7 +2,7 @@
 
 Bu proje, yalnızca HTML, CSS ve JavaScript kullanılarak geliştirilmiş bir örnek web sitesidir. Özellikle yeni başlayan yazılımcıların, temel teknolojileri kullanarak nasıl şık ve düzenli bir arayüz oluşturabileceklerini göstermeyi amaçlamaktadır. Projede herhangi bir framework veya tasarım kütüphanesi kullanılmamıştır.
 
-Projenin canlı halini görmek için buraya tıklayın.
+Projenin canlı versiyonunu görmek için [buraya tıklayın](https://tasar-m-k-t-phanesi.vercel.app/). 
 
 ## Özellikler
 - **Sade Kod Yapısı: Yeni başlayanlar için anlaşılır ve takip edilmesi kolay.
