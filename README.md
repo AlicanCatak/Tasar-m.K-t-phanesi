@@ -28,4 +28,4 @@ Herhangi bir ekstra kurulum gerektirmez.
 
 ## Ekran Görüntüsü
 
-![Ekran Görüntüsü](img/ekran1.png)
+![Görsel](https://resmim.net/cdn/2025/06/03/TlquBH.png)
