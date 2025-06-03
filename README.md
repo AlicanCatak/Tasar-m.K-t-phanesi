@@ -25,3 +25,7 @@ Projenin canlı versiyonunu görmek için [buraya tıklayın](https://tasar-m-k-
 index.html dosyasını bir tarayıcıda açarak projeyi görüntüleyebilirsin.
 
 Herhangi bir ekstra kurulum gerektirmez.
+
+## Ekran Görüntüsü
+
+!(/ekran1.png)
