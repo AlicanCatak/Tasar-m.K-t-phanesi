@@ -28,4 +28,4 @@ Herhangi bir ekstra kurulum gerektirmez.
 
 ## Ekran Görüntüsü
 
-![Ekran Görüntüsü](./img/ekran1.png)
+![Ekran Görüntüsü](img/ekran1.png)
